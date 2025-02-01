@@ -1,12 +1,13 @@
 import discord
 import openai
 import anthropic
+import os
+import dotenv
 
 # Load bot token and API keys
-DISCORD_TOKEN = "MTMzNDU1OTMyODAyMzM1MTM3OQ.Ga7J_U.wxOjJm3GHH-GjPSiPzkIZtEizs_U39x_CVzZ84"
-OPENAI_API_KEY = "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"
-CLAUDE_API_KEY = "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"
-
+DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+CLAUDE_API_KEY = os.getenv("CLAUDE_API_KEY")
 
 # Initialize Discord bot
 intents = discord.Intents.default()
