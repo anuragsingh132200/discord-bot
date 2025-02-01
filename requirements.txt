@@ -1,5 +1,3 @@
 anthropic
 discord
 openai
-dotenv
-os
